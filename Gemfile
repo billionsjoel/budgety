@@ -1,6 +1,6 @@
 # rubocop:disable Lint/UnusedBlockArgument
 source 'https://rubygems.org'
-git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
 
@@ -74,4 +74,4 @@ end
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
-# rubocop:disable Lint/UnusedBlockArgument
+# rubocop:enable Lint/UnusedBlockArgument
