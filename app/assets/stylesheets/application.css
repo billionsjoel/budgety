@@ -13,9 +13,3 @@
  *= require_tree .
  *= require_self
  */
-
-* {
-	padding: 0 !important;
-	margin: 0 !important;
-	box-sizing: border-box !important;
-}
