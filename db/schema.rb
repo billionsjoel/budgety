@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_05_27_101303) do
+ActiveRecord::Schema[7.0].define(version: 2022_05_27_110058) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_27_101303) do
     t.float "amount"
     t.bigint "category_id", null: false
     t.bigint "author_id", null: false
-    t.string "name"
+    t.string "name", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["author_id"], name: "index_purchases_on_author_id"
