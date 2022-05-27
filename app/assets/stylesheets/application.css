@@ -24,3 +24,11 @@
 	font-weight: 400;
 	font-size: 4rem;
 }
+
+.name {
+	padding: 0.6rem !important;
+	margin: 1rem auto 1rem auto;
+	border: 0.1px solid rgb(118, 117, 117) !important;
+	border-radius: 10rem !important;
+}
+
