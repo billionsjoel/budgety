@@ -1,0 +1,30 @@
+<div id="<%= dom_id category %>">
+  <div class="card my-1 shadow">
+    <div class="container py-1 px-1">
+      <div class="row">
+        <div class="col-4">
+          <%= image_tag category.icon, alt: category.name, style: 'width: 100px; height: 100px;' %>
+        </div>
+          <div class="card-body col-6">
+            <div class="card-text container">
+            <div class="row">
+                <div class="col-6 text-secondary">
+                  <h5 class="card-title">
+                    <%=category.name%>
+                  </h5>
+                </div>
+                <div class="col-6">
+                  $<span><%=category.total%></span>
+                </div>
+                <div class="col-12 text-secondary">
+                  <h6><%=category.updated_at.strftime("%d %b %Y")%></h6>
+
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
