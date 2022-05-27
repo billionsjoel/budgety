@@ -9,10 +9,10 @@ RSpec.describe "Categories", type: :request do
 
   let(:invalid_attributes) { invalid_category.attributes }
 
-  describe "GET /categories" do
-    it "works! (now write some real specs)" do
-      get categories_index_path
-      expect(response).to have_http_status(200)
+  describe "GET /index" do
+    it 'renders a successful response' do
+      get categories_url
+      expect(response).to be_successful
     end
   end
 end
