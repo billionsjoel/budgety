@@ -8,7 +8,7 @@
           <div class="card-body col-6">
             <div class="card-text container">
             <div class="row">
-                <div class="col-6 text-secondary">
+                <div class="col-6 text-primary">
                   <h5 class="card-title">
                     <%=category.name%>
                   </h5>
@@ -16,8 +16,8 @@
                 <div class="col-6">
                   $<span><%=category.total%></span>
                 </div>
-                <div class="col-12 text-secondary">
-                  <h6><%=category.updated_at.strftime("%d %b %Y")%></h6>
+                <div class="col-12 fw-lighter text-muted">
+                  <span class><%=category.updated_at.strftime("%d %b %Y")%></span>
                 </div>
             </div>
             </div>

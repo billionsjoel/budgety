@@ -1,4 +1,4 @@
-<div class=" b w-100 d-flex bg-primary text-white py-3 px-2">
+<div class=" b w-100 d-flex bg-primary text-white p-4 mb-2">
     <div class="text-center w-100">
       <p class="mb-0">Categories</p>
     </div>
@@ -15,7 +15,7 @@
       <%= render category %>
     <%end%>
   <% end %>
-  <div class="d-flex justify-content-center py-2 flex-column px-2",  style='background-color: #5fb523'>
+  <div class="d-flex justify-content-center py-2 flex-column px-2 mt-3",  style='background-color: #5fb523'>
     <%= link_to "Add Category", new_category_path, class: 'btn btn-outline-light rounded-0 py-2' %>
   </div>
   <%=render 'logout'%>
