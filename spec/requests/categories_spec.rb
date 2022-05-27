@@ -31,4 +31,11 @@ RSpec.describe "Categories", type: :request do
     end
   end
 
+  describe 'GET /edit' do
+    it 'renders a successful response' do
+      valid_category.save
+      get edit_category_url(valid_category)
+      expect(response).to be_successful
+    end
+  end
 end
