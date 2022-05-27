@@ -9,4 +9,8 @@ RSpec.describe 'purchases/index', type: :system do
     sign_in test_user
     visit category_purchases_url(test_category)
   end
+
+  it 'renders the purchases title' do
+    expect(page).to have_content('Purchases')
+  end
 end
