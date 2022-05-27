@@ -13,4 +13,7 @@ RSpec.describe 'purchases/index', type: :system do
   it 'renders the purchases title' do
     expect(page).to have_content('Purchases')
   end
+  it 'renders a link to a Add purchase page' do
+    expect(page).to have_link('Add purchase')
+  end
 end
