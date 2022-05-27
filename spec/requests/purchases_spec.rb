@@ -24,4 +24,11 @@ RSpec.describe "Purchases", type: :request do
       expect(response).to be_successful
     end
   end
+
+  describe 'GET /new' do
+    it 'renders a successful response' do
+      get new_category_purchase_url(test_category)
+      expect(response).to be_successful
+    end
+  end
 end
