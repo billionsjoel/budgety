@@ -9,7 +9,11 @@ RSpec.describe "Purchases", type: :request do
   let(:valid_attributes) { valid_purchase.attributes }
 
   let(:invalid_attributes) { invalid_purchase.attributes }
-  describe "GET /purchases" do
-
+  describe "GET /index" do
+    it 'renders a successful response' do
+      valid_purchase.save
+      get category_purchases_url(test_category)
+      expect(response).to be_successful
+    end
   end
 end
