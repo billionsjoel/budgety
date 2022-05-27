@@ -55,15 +55,15 @@ RSpec.describe "Categories", type: :request do
   end
 
   context 'with invalid parameters' do
-      it 'fails on creating a new Category' do
-        expect do
-          post categories_url, params: { category: invalid_attributes }
-        end.to change(Category, :count).by(0)
-      end
-
-      it "displays new template on success" do
+    it 'fails on creating a new Category' do
+      expect do
         post categories_url, params: { category: invalid_attributes }
-        expect(response).to have_http_status(:unprocessable_entity)
-      end
-   end
+      end.to change(Category, :count).by(0)
+    end
+
+    it "displays new template on success" do
+      post categories_url, params: { category: invalid_attributes }
+      expect(response).to have_http_status(:unprocessable_entity)
+    end
+  end
 end
