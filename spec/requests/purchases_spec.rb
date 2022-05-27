@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Purchases", type: :request do
+RSpec.describe 'Purchases', type: :request do
   let(:test_user) { create :user }
   let(:test_category) { create :category }
   before { sign_in test_user }
@@ -9,7 +9,7 @@ RSpec.describe "Purchases", type: :request do
   let(:valid_attributes) { valid_purchase.attributes }
 
   let(:invalid_attributes) { invalid_purchase.attributes }
-  describe "GET /index" do
+  describe 'GET /index' do
     it 'renders a successful response' do
       valid_purchase.save
       get category_purchases_url(test_category)
