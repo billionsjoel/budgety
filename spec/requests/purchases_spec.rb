@@ -16,4 +16,12 @@ RSpec.describe "Purchases", type: :request do
       expect(response).to be_successful
     end
   end
+
+  describe 'GET /show' do
+    it 'renders a successful response' do
+      valid_purchase.save
+      get category_purchase_url(category_id: test_category.id, id: valid_purchase.id)
+      expect(response).to be_successful
+    end
+  end
 end
