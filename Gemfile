@@ -73,5 +73,6 @@ group :test do
 end
 
 gem 'cancancan'
+gem 'counter_culture', '~> 2.0'
 gem 'devise'
 gem 'rubocop', '>= 1.0', '< 2.0'
