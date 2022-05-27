@@ -1,0 +1,15 @@
+<%= form_with scope: :purchase, url: category_purchases_path(category_id:params[:category_id]) , method: :post do |f| %>
+    <div class=" b w-100 d-flex justify-content-between align-items-center bg-primary text-white">
+        <%= link_to  category_purchases_path(category_id:params[:category_id]), id: 'back_to_home'  do %>
+          <i class="fa fa-arrow-left text-white" aria-hidden="true"></i>
+        <%end%>
+
+      <p class="mb-0">New Purchase</p>
+      <%= f.submit "Submit", class:'btn text-white',data:{turbo:false} %>
+    </div>
+          <%=render 'error_messages', model: purchase %>
+
+        <%= f.text_field :name,placeholder: 'name', class: 'form-control rounded-0' %>
+        <%= f.text_field :amount,placeholder: 'amount', class: 'form-control rounded-0' %>
+        <%= f.select :category_id,@categories,{},{class:'form-select'}%>
+<% end %>
