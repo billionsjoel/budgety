@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Categories", type: :request do
+RSpec.describe 'Categories', type: :request do
   let(:test_user) { create :user }
   before { sign_in test_user }
   let(:valid_category) { build :category, user: test_user }
@@ -9,7 +9,7 @@ RSpec.describe "Categories", type: :request do
 
   let(:invalid_attributes) { invalid_category.attributes }
 
-  describe "GET /index" do
+  describe 'GET /index' do
     it 'renders a successful response' do
       get categories_url
       expect(response).to be_successful
@@ -61,7 +61,7 @@ RSpec.describe "Categories", type: :request do
       end.to change(Category, :count).by(0)
     end
 
-    it "displays new template on success" do
+    it 'displays new template on success' do
       post categories_url, params: { category: invalid_attributes }
       expect(response).to have_http_status(:unprocessable_entity)
     end
