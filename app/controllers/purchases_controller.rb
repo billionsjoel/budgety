@@ -1,4 +1,7 @@
 class PurchasesController < ApplicationController
+  before_action :authenticate_user!
+  before_action :set_purchase, only: %i[show edit update destroy]
+
   def index
     @purchases = Purchase.where(author: current_user, category_id: params[:category_id]).order(updated_at: :desc)
     @total = @purchases.sum(:amount)
