@@ -59,4 +59,8 @@ class PurchasesController < ApplicationController
     @purchase = Purchase.find(params[:id])
   end
 
+  def purchase_params
+    params.require(:purchase).permit(:name, :amount, :category_id, :author_id)
+  end
+
 end
