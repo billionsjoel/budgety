@@ -15,4 +15,12 @@ RSpec.describe "Categories", type: :request do
       expect(response).to be_successful
     end
   end
+
+  describe 'GET /show' do
+    it 'renders a successful response' do
+      valid_category.save
+      get category_url(valid_category)
+      expect(response).to be_successful
+    end
+  end
 end
