@@ -9,6 +9,9 @@ RSpec.describe 'categories/index', type: :system do
     visit categories_url
   end
 
+  it 'renders the title' do
+    expect(page).to have_content('categories')
+  end
 
 
 end
