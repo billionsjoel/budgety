@@ -8,4 +8,8 @@ class UsersController < ApplicationController
       category
     end
   end
+
+  def new
+    @category = Category.new
+  end
 end
