@@ -9,4 +9,8 @@ RSpec.describe 'categories/new', type: :system do
     visit new_category_url
   end
 
+  it 'renders the New category title' do
+    expect(page).to have_content('New Category')
+  end
+
 end
