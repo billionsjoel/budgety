@@ -52,4 +52,11 @@ class PurchasesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def set_purchase
+    @purchase = Purchase.find(params[:id])
+  end
+
 end
