@@ -12,6 +12,8 @@ RSpec.describe 'categories/index', type: :system do
   it 'renders the title' do
     expect(page).to have_content('categories')
   end
-
+  it 'renders a link to a Add Category page' do
+    expect(page).to have_link('Add Category')
+  end
 
 end
