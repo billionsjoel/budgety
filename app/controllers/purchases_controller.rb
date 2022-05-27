@@ -11,6 +11,8 @@ class PurchasesController < ApplicationController
 
   def show; end
 
+  def edit; end
+
   def create
     @purchase = Purchase.new(purchase_params)
     @purchase.author = current_user
