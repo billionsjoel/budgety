@@ -9,6 +9,8 @@ class PurchasesController < ApplicationController
     set_users_categories
   end
 
+  def show; end
+
   def create
     @purchase = Purchase.new(purchase_params)
     @purchase.author = current_user
