@@ -38,4 +38,18 @@ class PurchasesController < ApplicationController
       end
     end
   end
+
+  def set_users_categories
+    @users = User.pluck(:name, :id)
+    @categories = Category.pluck(:name, :id)
+  end
+
+  def destroy
+    @purchase.destroy
+
+    respond_to do |format|
+      format.html { redirect_to purchases_url, notice: 'Purchase was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
 end
