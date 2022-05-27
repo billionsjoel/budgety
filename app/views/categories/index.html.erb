@@ -1,0 +1,22 @@
+<div class=" b w-100 d-flex bg-primary text-white py-3 px-2">
+    <div class="text-center w-100">
+      <p class="mb-0">Categories</p>
+    </div>
+
+</div>
+<div id="categories", class="container w-100 d-flex flex-column">
+  <%if @categories.empty? %>
+    <p>
+      You can add categories by clicking the button
+    </p>
+  <%end%>
+  <% @categories.each do |category| %>
+    <%= link_to category_purchases_path(category),class: 'text-decoration-none text-body' do %>
+      <%= render category %>
+    <%end%>
+  <% end %>
+  <div class="d-flex justify-content-center py-2 flex-column px-2",  style='background-color: #5fb523'>
+    <%= link_to "Add Category", new_category_path, class: 'btn btn-outline-light rounded-0 py-2' %>
+  </div>
+  <%=render 'log_out'%>
+</div>
