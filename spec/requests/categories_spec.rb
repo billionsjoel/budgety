@@ -38,4 +38,19 @@ RSpec.describe "Categories", type: :request do
       expect(response).to be_successful
     end
   end
+
+  describe 'POST /create' do
+    context 'with valid parameters' do
+      it 'creates a new Category' do
+        expect do
+          post categories_url, params: { category: valid_attributes }
+        end.to change(Category, :count).by(1)
+      end
+
+      it 'tests if redirects to categories after save' do
+        post categories_url, params: { category: valid_attributes }
+        expect(response).to redirect_to(categories_url)
+      end
+    end
+  end
 end
