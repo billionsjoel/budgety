@@ -13,4 +13,8 @@ RSpec.describe 'categories/new', type: :system do
     expect(page).to have_content('New Category')
   end
 
+  it 'Should lead back to categories page' do
+    page.find('#back_to_home').click
+    expect(current_path).to eql(categories_path)
+  end
 end
