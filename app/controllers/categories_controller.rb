@@ -14,6 +14,10 @@ class CategoriesController < ApplicationController
     @category = Category.new
   end
 
+  def show; end;
+
+  def edit; end;
+
   def create
     @category = Category.new(category_params)
     @category.user_id = current_user.id
