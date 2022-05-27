@@ -14,4 +14,8 @@ RSpec.describe 'purchases/new', type: :system do
     expect(page).to have_content('New Purchase')
   end
 
+  it 'should redirect back' do
+    page.find('#back_to_home').click
+    expect(current_path).to eql(category_purchases_path(test_category))
+  end
 end
