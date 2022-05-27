@@ -1,0 +1,22 @@
+<%= form_with(model: category) do |f| %>
+
+    <div class=" b w-100 d-flex justify-content-between align-items-center bg-primary text-white">
+      <%= link_to  categories_path, id: 'back_to_home' do %>
+        <i class="fa fa-arrow-left text-white" aria-hidden="true"></i>
+      <%end%>
+
+      <p class="mb-0">New Category</p>
+      <%= f.submit "Submit", class:'btn text-white',data:{turbo:false} %>
+    </div>
+    <%=render 'error_messages', model: category %>
+
+
+    <%= f.text_field :name,placeholder: 'name', class: 'form-control rounded-0' %>
+
+
+
+    <%= f.text_field :icon,placeholder: 'icon url', class: 'form-control rounded-0' %>
+
+
+
+<% end %>
