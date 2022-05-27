@@ -10,4 +10,8 @@ RSpec.describe 'purchases/new', type: :system do
     visit new_category_purchase_url(test_category)
   end
 
+  it 'should render New Purchase' do
+    expect(page).to have_content('New Purchase')
+  end
+
 end
