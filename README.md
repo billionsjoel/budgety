@@ -12,7 +12,7 @@ I will create a Ruby on Rails application that allows the user to:
 
 > | -   | Splash Page                        | -   | Categories                          | -   | Purchases                           | -   |
 > | --- | ---------------------------------- | --- | ----------------------------------- | --- | ----------------------------------- | --- |
-> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot3.png)) | -   | ![screenshot](app-screenshot2.png)) | -   |
+> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot3.png) | -   | ![screenshot](app-screenshot2.png) | -   |
 
 ## Live App link
 - Here is the [link](https://budgety-rails-app.herokuapp.com/) to the live app `https://budgety-rails-app.herokuapp.com/`
