@@ -1,4 +1,5 @@
 # Budgety app
+
 The Ruby on Rails capstone project is about building a mobile web application where I can manage my budget: I have a list of transactions associated with a category, so that I can see how much money I spent and on what.
 
 I will create a Ruby on Rails application that allows the user to:
@@ -9,9 +10,9 @@ I will create a Ruby on Rails application that allows the user to:
 
 ## Views
 
-> | -   | Splash Page                       | -   | Categories                                 | -   | Purchases                                   | -   |
-> | --- | --------------------------------- | --- | ------------------------------------------ | --- | ------------------------------------------- | --- |
-> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot.png)) | -   | ![screenshot](app-screenshot1.png)) | -   |
+> | -   | Splash Page                        | -   | Categories                          | -   | Purchases                           | -   |
+> | --- | ---------------------------------- | --- | ----------------------------------- | --- | ----------------------------------- | --- |
+> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot3.png)) | -   | ![screenshot](app-screenshot1.png)) | -   |
 
 ## objectives
 
