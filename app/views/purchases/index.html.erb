@@ -1,15 +1,16 @@
 <div class="p-2">
 <div class=" b w-100 d-flex bg-primary text-white py-3 px-2">
     <%= link_to  categories_path(category_id: params[:category_id]) do %>
-      <i class="fa fa-arrow-left text-white" aria-hidden="true"></i>
+      <i class="fa fa-arrow-left text-white ms-4 mt-2" aria-hidden="true"></i>
     <%end%>
   <div class="text-center flex-grow-1">
-    <p class="mb-0">Purchases</p>
+    <H2 class="mb-0">PURCHASES</H2>
   </div>
+    <%= render 'log_out'%>
 </div>
-<div class="d-flex justify-content-between shadow py-3 px-2 bg-white">
-    <span class='text-secondary'>Total</span>
-    <span>$<%=@total%></span>
+<div class="d-flex justify-content-around shadow py-3 px-2 bg-white">
+    <span class='text-secondary lead'>Total</span>
+    <span class="lead">$<%=@total%></span>
   </div>
 <div id="purchases", class="container w-100 d-flex flex-column">
   <%if @purchases.empty? %>
