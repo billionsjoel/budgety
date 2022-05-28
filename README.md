@@ -1,24 +1,81 @@
-# README
+# Budgety app
+The Ruby on Rails capstone project is about building a mobile web application where I can manage Ir budget: I have a list of transactions associated with a category, so that I can see how much money I spent and on what.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I will create a Ruby on Rails application that allows the user to:
 
-Things you may want to cover:
+- register and log in, so that the data is private to them.
+- introduce new transactions associated with a category.
+- see the money spent on each category.
 
-* Ruby version
+## Views
 
-* System dependencies
+> | -   | Splash Page                       | -   | Categories                                 | -   | Purchases                                   | -   |
+> | --- | --------------------------------- | --- | ------------------------------------------ | --- | ------------------------------------------- | --- |
+> | -   | ![screenshot](app-screenshot1.png) | -   | ![screenshot](app-screenshot.png)) | -   | ![screenshot](app-screenshot1.png)) | -   |
 
-* Configuration
+## objectives
 
-* Database creation
+- Use ruby gems as software packages system.
+- Install Ruby on Rails framework.
+- Understand Rails RESTful design and router.
+- Use controllers to handle requests and render empty views.
+- Use params from browser request in a safe way.
+- Use preprocessed html file with embedded Ruby code.
+- Use layouts and templates for shared content.
+- Use database migration files to maintain database schema.
+- Use validations for models.
+- Secure app from n+1 problems.
+- Understand what ORM is.
+- Write SQL queries with ActiveRecord.
+- Set up associations between models.
+- Build a webapp that requires the user to log in.
+- Use devise gem for authentication.
+- Limit access to webapp resources based on authorization rules.
+- Analyze in writing why you have made a coding choice using one structure over another.
 
-* Database initialization
+## Built With
 
-* How to run the test suite
+- Ruby on Rails
+- Gems
+  - Rspec
+  - Capybara
+  - FactoryBot
+  - Selenium-webdriver
+  - Letter-opener
+  - cancancan
+  - Devise
 
-* Services (job queues, cache servers, search engines, etc.)
+## Getting Started
 
-* Deployment instructions
+- Make sure I have Ruby installed in Ir system.
+- I can install it [here](https://www.ruby-lang.org/en/documentation/installation/).
 
-* ...
+Clone this repository by running `https://github.com/billionsjoel/budgety.git` in Ir command line.
+
+Navigate to the repository by running `cd budgety`.
+
+## Installation
+
+- Clone the repo and run `bundle install` in the command line to install the dependencies.
+- run `rails s`
+
+## Author
+
+👤 **Atugonza Joel Billions**
+
+- GitHub: [@billionsjoel](https://github.com/billionsjoel)
+- LinkedIn: [Billionsjoel](https://www.linkedin.com/in/billionsjoel/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/billionsjoel/budgety/issues).
+
+## Show Ir support
+
+Give a ⭐️ if I like this project!
+
+## Acknowledgments
+
+- Coding partner, Standup and morning session team
