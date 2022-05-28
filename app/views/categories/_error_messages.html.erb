@@ -1,0 +1,5 @@
+<% if model.errors.any? %>
+	<%model.errors.full_messages.each do |message|%>
+		<p class='text-danger'><%=message%></p>
+	<%end%>
+<% end %>
