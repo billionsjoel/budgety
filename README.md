@@ -1,4 +1,4 @@
-# Budgety app
+# RAILS BUDGETY APP
 
 The Ruby on Rails capstone project is about building a mobile web application where I can manage my budget: I have a list of transactions associated with a category, so that I can see how much money I spent and on what.
 
