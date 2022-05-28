@@ -1,5 +1,5 @@
 # Budgety app
-The Ruby on Rails capstone project is about building a mobile web application where I can manage Ir budget: I have a list of transactions associated with a category, so that I can see how much money I spent and on what.
+The Ruby on Rails capstone project is about building a mobile web application where I can manage my budget: I have a list of transactions associated with a category, so that I can see how much money I spent and on what.
 
 I will create a Ruby on Rails application that allows the user to:
 
@@ -28,7 +28,7 @@ I will create a Ruby on Rails application that allows the user to:
 - Understand what ORM is.
 - Write SQL queries with ActiveRecord.
 - Set up associations between models.
-- Build a webapp that requires the user to log in.
+- Build a webapp that requyoures the user to log in.
 - Use devise gem for authentication.
 - Limit access to webapp resources based on authorization rules.
 - Analyze in writing why you have made a coding choice using one structure over another.
@@ -47,10 +47,10 @@ I will create a Ruby on Rails application that allows the user to:
 
 ## Getting Started
 
-- Make sure I have Ruby installed in Ir system.
+- Make sure you have Ruby installed in your system.
 - I can install it [here](https://www.ruby-lang.org/en/documentation/installation/).
 
-Clone this repository by running `https://github.com/billionsjoel/budgety.git` in Ir command line.
+Clone this repository by running `https://github.com/billionsjoel/budgety.git` in your command line.
 
 Navigate to the repository by running `cd budgety`.
 
@@ -58,6 +58,10 @@ Navigate to the repository by running `cd budgety`.
 
 - Clone the repo and run `bundle install` in the command line to install the dependencies.
 - run `rails s`
+
+## Video link
+
+`link to video: https://drive.google.com/file/d/1XTPb5Io7yJUponNJRVjrRYonRrP2dvJt/view?usp=sharing`
 
 ## Author
 
@@ -72,7 +76,7 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/billionsjoel/budgety/issues).
 
-## Show Ir support
+## Show your support
 
 Give a ⭐️ if I like this project!
 
