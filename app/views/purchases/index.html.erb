@@ -12,7 +12,7 @@
     <span class='text-secondary lead'>Total</span>
     <span class="lead">$<%=@total%></span>
   </div>
-<div id="purchases", class="container w-100 d-flex flex-column">
+<div id="purchases", class="w-100 d-flex flex-column">
   <%if @purchases.empty? %>
     <p class="p-4">
       Click button to add purchase
@@ -25,7 +25,7 @@
     <%end%>
   <% end %>
 </div>
-  <div class="d-flex justify-content-center py-2 flex-column px-2",  style='background-color: #5fb523'>
+  <div class="container d-flex justify-content-center py-2 flex-column px-2 fixed-bottom",  style='background-color: #5fb523'>
     <%= link_to "Add purchase", new_category_purchase_path, class: 'btn btn-outline-light rounded-0 py-2' %>
   </div>
 </div>
