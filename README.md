@@ -86,4 +86,5 @@ Give a ⭐️ if I like this project!
 
 ## Acknowledgments
 
-- Coding partner, Standup and morning session team
+- Original design idea by Gregoire Vella on Behance.
+- Hat tip to Microverse
